@@ -86,7 +86,7 @@ addEvent(document.body, 'click', function(e){
     const totalSum = document.querySelector('#cart-total').innerHTML;
     const totalProduct = cartData.map(item => item.itemTitle);
     if(cartData.length > 0){
-      alert(totalProduct + ' | ' + ' На сумму: ' +  totalSum + 'руб.');
+      alert('Вы добавили в корзину ' + totalProduct + ' | ' + ' На сумму: ' +  totalSum + 'руб.');
       cartCont.innerHTML = '';
       cartTotal.innerHTML = 0;
       localStorage.clear();
