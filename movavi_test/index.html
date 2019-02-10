@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Basket_test</title>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <div class="row">
+        <div class="header-logo">
+            <img src="img/header/logo.png" alt="">
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <div class="row main">
+      <section class="product">
+
+        <article data-id="1" class="product__block item">
+          <div class="item__img">
+            <img src="img/main/box_1.png" alt="Пакет видеопрограмм">
+          </div>
+          <div class="item__info info">
+            <div class="info__title">Пакет видеопрограмм</div>
+            <div class="info__descr">Пакет лучших программ для работы с видео! Редактируйте на монтажном столе. Конвертируйте в любые форматы. Создавайте слайд-шоу. Нарезайте видео. Захватывайте видео с экрана, камер и 
+              ТВ-тюнера. Записывайте DVD и диски Blu-ray.</div>
+          </div>
+          <div class="item__act act">
+            <div class="act__price">
+              1990 руб.
+            </div>
+            <button class="add_item" data-id="1">В Корзину!</button>
+          </div>
+        </article>
+
+        <article data-id="2" class="product__block item">
+          <div class="item__img">
+            <img src="img/main/box_2.png" alt="Фотостудия">
+          </div>
+          <div class="item__info info">
+            <div class="info__title">Фотостудия Movavi</div>
+            <div class="info__descr">Полный набор инструментов для легкой фотообработки. Настраивайте параметры изображения вручную и улучшайте качество автоматически, добавляйте крутые фильтры и надписи. Обрезайте, отражайте и поворачивайте кадр, изменяйте размер фото. Удаляйте с фото лишние объекты и заменяйте скучные фоны. Обрабатывайте папки с фото в пакетном режиме, создавайте слайд-шоу с музыкой и переходами.</div>
+          </div>
+          <div class="item__act act">
+            <div class="act__price">
+              1890 руб.
+            </div>
+            <button class="add_item" data-id="2">В Корзину!</button>
+        </article>
+
+        <article data-id="3" class="product__block item">
+          <div class="item__img">
+            <img src="img/main/box_3.png" alt="Фоторедактор">
+          </div>
+          <div class="item__info info">
+            <div class="info__title">Movavi Фоторедактор</div>
+            <div class="info__descr">Улучшайте качество фото автоматически и вручную. Настраивайте резкость, контраст и цветность. Удаляйте с фотографий объекты, случайно попавшие в кадр. Заменяйте фон изображения. Добавляйте надписи. Выделяйте элементы при помощи удобных 
+            инструментов – кисти, волшебной палочки или лассо. Используйте штамп, чтобы устранять мелкие дефекты изображений. </div>
+          </div>
+          <div class="item__act act">
+            <div class="act__price">
+              990 руб.
+            </div>
+            <button class="add_item" data-id="3">В Корзину!</button>
+          </div>
+        </article>
+
+        <article data-id="4" class="product__block item">
+          <div class="item__img">
+            <img src="img/main/box_4.png" alt="Пакетный фоторедактор">
+          </div>
+          <div class="item__info info">
+            <div class="info__title">Movavi Пакетный фоторедактор</div>
+            <div class="info__descr">Обрабатывайте любое количество фотографий одним нажатием кнопки – уменьшайте целые фотоальбомы, переименовывайте файлы, конвертируйте формат и улучшайте качество изображений в пакетном режиме. Теперь вам не придется сохранять каждый файл по отдельности: просто примените изменения ко всем 
+            фото сразу и экспортируйте их с новыми настройками!</div>
+          </div>
+          <div class="item__act act">
+            <div class="act__price">
+              490 руб.
+            </div>
+            <button class="add_item" data-id="4">В Корзину!</button>
+          </div>
+        </article>
+
+        <article data-id="5" class="product__block item">
+          <div class="item__img">
+            <img src="img/main/box_5.png" alt="Захват видео с экрана">
+          </div>
+          <div class="item__info info">
+            <div class="info__title">Захват видео с экрана</div>
+            <div class="info__descr">Записывайте все, что происходит на экране вашего монитора: видеочаты, работу в программах и интернет-браузерах и многое другое. Сохраняйте скринкасты в любые популярные форматы и для мобильных устройств.</div>
+          </div>
+          <div class="item__act act">
+            <div class="act__price">
+              1490 руб.
+            </div>
+            <button class="add_item" data-id="5">В Корзину!</button>
+          </div>
+        </article>
+        
+      </section>
+      <aside class="basket sticky-up sticky-down" id="cart">
+        <div class="basket__title cart-header">
+          <div class="cart-header__img"><img src="img/basket/cart.png" alt="cart"></div>
+          <div class="cart-header__name"><span>Корзина</span></div>
+        </div>
+        <div class="basket__area">
+        </div>
+        <div class="basket__total">Всего:  <span id="cart-total">0</span> <span>руб.</span></div>
+        <div class="basket__button"><button class="check">Оформить заказ</button></div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+  </footer>
+
+
+<script src="js/sticky.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>
